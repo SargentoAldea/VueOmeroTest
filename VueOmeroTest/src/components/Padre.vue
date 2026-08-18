@@ -1,4 +1,5 @@
 <template>
+
   <div>
     <Hijo mensaje="Hola desde el padre" />
 
@@ -10,6 +11,9 @@
     <HijoBoton @saludo="mostrarSaludo" />
     <p v-if="mensaje">{{ mensaje }}</p>
   </div>
+  <div>
+    <Contacto />
+  </div>
     
 </template>
 <script>
@@ -17,13 +21,15 @@ import Hijo from './Hijo.vue'
 import Hijo2 from './Hijo2.vue'
 import Hijo3 from './Hijo3.vue'
 import HijoBoton from './HijoBoton.vue'
+import Contacto from './Contacto.vue'
 
 export default {
   components: {
     Hijo,
     Hijo2,
     Hijo3,
-    HijoBoton
+    HijoBoton,
+    Contacto
   },
   data(){
     return {mensaje: ''}
