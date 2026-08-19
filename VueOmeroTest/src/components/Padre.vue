@@ -12,6 +12,9 @@
     <p v-if="mensaje">{{ mensaje }}</p>
   </div>
   <div>
+    <Tarea />
+  </div>
+  <div>
     <Contacto />
   </div>
     
@@ -22,6 +25,7 @@ import Hijo2 from './Hijo2.vue'
 import Hijo3 from './Hijo3.vue'
 import HijoBoton from './HijoBoton.vue'
 import Contacto from './Contacto.vue'
+import Tarea from './Tarea.vue'
 
 export default {
   components: {
@@ -29,7 +33,8 @@ export default {
     Hijo2,
     Hijo3,
     HijoBoton,
-    Contacto
+    Contacto,
+    Tarea
   },
   data(){
     return {mensaje: ''}
